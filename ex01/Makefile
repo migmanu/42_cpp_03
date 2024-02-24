@@ -1,4 +1,4 @@
-OBJS = main.cpp ClapTrap.cpp
+OBJS = main.cpp ClapTrap.cpp ScavTrap.cpp
 
 CC = c++
 
