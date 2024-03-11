@@ -1,4 +1,4 @@
-OBJS = main.cpp Fixed.cpp Point.cpp bsp.cpp
+OBJS = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
 
 CC = c++
 
