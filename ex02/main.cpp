@@ -1,14 +1,14 @@
-#include "ScavTrap.hpp"
+#include "FragTrap.hpp"
 #include <iostream>
 #include <ostream>
 
 int main(void)
 {
-	ScavTrap empty;
-	ScavTrap crazy("crazy");
-	ScavTrap dead("dead");
+	FragTrap empty;
+	FragTrap crazy("crazy");
+	FragTrap dead("dead");
 
-	dead.guardGate();
+	dead.highFivesGuys();
 	for (int i = 0; i < 10; i++)
 	{
 	  std::cout << std::endl;
