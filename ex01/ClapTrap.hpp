@@ -6,7 +6,7 @@
 /*   By: jmigoya- <jmigoya-@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/15 12:08:45 by jmigoya-          #+#    #+#             */
-/*   Updated: 2024/03/10 15:14:13 by jmigoya-         ###   ########.fr       */
+/*   Updated: 2024/03/11 20:18:31 by jmigoya-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ class ClapTrap
 	// Overloaded operators
 	ClapTrap &operator=(const ClapTrap &rhs);
 
-	// Private member functions
+	// Public member functions
 	void takeDamage(unsigned int amount);
 	void beRepaired(unsigned int amount);
 	int dealDamage(void);
