@@ -6,7 +6,7 @@
 /*   By: jmigoya- <jmigoya-@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/15 12:08:45 by jmigoya-          #+#    #+#             */
-/*   Updated: 2024/02/24 21:03:58 by jmigoya-         ###   ########.fr       */
+/*   Updated: 2024/03/10 15:14:13 by jmigoya-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,10 @@ class ClapTrap
 	ClapTrap &operator=(const ClapTrap &rhs);
 
 	// Private member functions
-  private:
-	void attack(const std::string &target);
 	void takeDamage(unsigned int amount);
 	void beRepaired(unsigned int amount);
 	int dealDamage(void);
+  private:
 
   protected:
 	std::string _name;

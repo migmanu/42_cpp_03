@@ -6,7 +6,7 @@
 /*   By: jmigoya- <jmigoya-@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/15 12:08:54 by jmigoya-          #+#    #+#             */
-/*   Updated: 2024/02/15 13:11:25 by jmigoya-         ###   ########.fr       */
+/*   Updated: 2024/03/10 15:06:58 by jmigoya-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,29 +43,6 @@ ClapTrap &ClapTrap::operator=(const ClapTrap &rhs)
 	std::cout << "- ClapTrap copy assignment operator init" << std::endl;
 	_name = rhs._name;
 	return *this;
-}
-
-void ClapTrap::attack(const std::string &target)
-{
-	if (_energyPoints <= 0)
-	{
-		std::cout << "- ClapTrap " << _name << " cannot attack: no energy points"
-			<< std::endl;
-		return;
-	}
-	if (_hitPoints <= 0)
-	{
-		std::cout << "- ClapTrap " << _name << " cannot attack: no hit points"
-			<< std::endl;
-		return;
-	}
-	_energyPoints--;
-	std::cout
-		<< "- ClapTrap " << _name << " attacks " << target << " causing "
-		<< _attackDamage << " points of damage" << std::endl;
-	std::cout << "Hit points left: " << _hitPoints << std::endl;
-	std::cout << "Energy points left: " << _energyPoints << std::endl;
-	return;
 }
 
 void ClapTrap::takeDamage(unsigned int amount)

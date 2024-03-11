@@ -6,7 +6,7 @@
 /*   By: jmigoya- <jmigoya-@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/24 19:13:28 by jmigoya-          #+#    #+#             */
-/*   Updated: 2024/02/24 21:04:38 by jmigoya-         ###   ########.fr       */
+/*   Updated: 2024/03/10 15:14:06 by jmigoya-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ class ScavTrap : public ClapTrap
 	// Public member functions
 	void guardGate(void);
 	void attack(const std::string &target);
-	void takeDamage(unsigned int amount);
-	void beRepaired(unsigned int amount);
-	int dealDamage(void);
+	// void takeDamage(unsigned int amount);
+	// void beRepaired(unsigned int amount);
+	// int dealDamage(void);
 	
 };
