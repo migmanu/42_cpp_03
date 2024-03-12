@@ -1,12 +1,12 @@
-#include "FragTrap.hpp"
+#include "DiamondTrap.hpp"
 #include <iostream>
 #include <ostream>
 
 int main(void)
 {
-	FragTrap empty;
-	FragTrap crazy("crazy");
-	FragTrap dead("dead");
+	DiamondTrap empty;
+	DiamondTrap crazy("crazy");
+	DiamondTrap dead("dead");
 
 	dead.highFivesGuys();
 	for (int i = 0; i < 10; i++)

@@ -6,14 +6,14 @@
 /*   By: jmigoya- <jmigoya-@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/24 19:13:28 by jmigoya-          #+#    #+#             */
-/*   Updated: 2024/03/10 15:14:06 by jmigoya-         ###   ########.fr       */
+/*   Updated: 2024/03/12 18:22:56 by jmigoya-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 #include <string>
 
-class ScavTrap : public ClapTrap
+class ScavTrap : virtual public ClapTrap
 {
   public:
 	// Constructors-destructors
@@ -26,10 +26,6 @@ class ScavTrap : public ClapTrap
 	ScavTrap &operator=(const ScavTrap &rhs);
 
 	// Public member functions
-	void guardGate(void);
 	void attack(const std::string &target);
-	// void takeDamage(unsigned int amount);
-	// void beRepaired(unsigned int amount);
-	// int dealDamage(void);
-	
+	void guardGate(void);
 };

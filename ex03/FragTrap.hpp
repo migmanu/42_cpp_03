@@ -6,14 +6,14 @@
 /*   By: jmigoya- <jmigoya-@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/11 20:21:30 by jmigoya-          #+#    #+#             */
-/*   Updated: 2024/03/11 21:02:00 by jmigoya-         ###   ########.fr       */
+/*   Updated: 2024/03/12 18:23:07 by jmigoya-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 #include <string>
 
-class FragTrap : public ClapTrap
+class FragTrap : virtual public ClapTrap
 {
   public:
 	// Constructors-destructors
@@ -26,8 +26,8 @@ class FragTrap : public ClapTrap
 	FragTrap &operator=(const FragTrap &rhs);
 
 	// Public member functions
-	void highFivesGuys(void);
 	void attack(const std::string &target);
+	void highFivesGuys(void);
 
   private:
 	int _highFives;

@@ -1,8 +1,8 @@
-OBJS = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
+OBJS = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp DiamondTrap.cpp
 
 CC = c++
 
-COMPILER_FLAGS = -Werror -Wextra -Wall -std=c++98 -g
+COMPILER_FLAGS = -Werror -Wextra -Wall -Wshadow -std=c++98 -g
 
 OBJ_NAME = exec
 
