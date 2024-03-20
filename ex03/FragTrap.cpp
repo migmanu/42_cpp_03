@@ -6,7 +6,7 @@
 /*   By: jmigoya- <jmigoya-@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/11 20:57:24 by jmigoya-          #+#    #+#             */
-/*   Updated: 2024/03/12 18:07:25 by jmigoya-         ###   ########.fr       */
+/*   Updated: 2024/03/20 16:06:52 by jmigoya-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,13 @@ FragTrap::FragTrap(void) : ClapTrap()
 
 FragTrap::FragTrap(std::string name) : ClapTrap(name)
 {
-	std::cout << "- FragTrap " << _name << " parameterized constructor init"
-		<< std::endl;
+	_name = name;
 	_hitPoints = 100;
 	_energyPoints = 50;
 	_attackDamage = 20;
 	_highFives = 0;
+	std::cout << "- FragTrap " << _name << " parameterized constructor init"
+		<< std::endl;
 	return;
 }
 

@@ -1,13 +1,15 @@
+#include "ClapTrap.hpp"
 #include "DiamondTrap.hpp"
 #include <iostream>
 #include <ostream>
 
 int main(void)
 {
-	DiamondTrap empty;
 	DiamondTrap crazy("crazy");
 	DiamondTrap dead("dead");
 
+	dead.whoAmI();
+	dead.guardGate();
 	dead.highFivesGuys();
 	for (int i = 0; i < 10; i++)
 	{

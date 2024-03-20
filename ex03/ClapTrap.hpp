@@ -6,7 +6,7 @@
 /*   By: jmigoya- <jmigoya-@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/15 12:08:45 by jmigoya-          #+#    #+#             */
-/*   Updated: 2024/03/12 18:04:50 by jmigoya-         ###   ########.fr       */
+/*   Updated: 2024/03/20 15:45:37 by jmigoya-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ class ClapTrap
 	void takeDamage(unsigned int amount);
 	void beRepaired(unsigned int amount);
 	int dealDamage(void);
-	virtual void attack(const std::string &target);
+	void attack(const std::string &target);
 
   protected:
 	std::string _name;

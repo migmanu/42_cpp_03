@@ -6,7 +6,7 @@
 /*   By: jmigoya- <jmigoya-@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/24 19:22:48 by jmigoya-          #+#    #+#             */
-/*   Updated: 2024/03/11 20:17:27 by jmigoya-         ###   ########.fr       */
+/*   Updated: 2024/03/20 16:08:36 by jmigoya-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,12 @@ ScavTrap::ScavTrap(void) : ClapTrap()
 
 ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
 {
-	std::cout << "- ScavTrap " << _name << " parameterized constructor init"
-		<< std::endl;
+	_name = name;
 	_hitPoints = 100;
 	_energyPoints = 50;
 	_attackDamage = 20;
+	std::cout << "- ScavTrap " << _name << " parameterized constructor init"
+		<< std::endl;
 	return;
 }
 
