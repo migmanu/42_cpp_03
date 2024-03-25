@@ -6,7 +6,7 @@
 /*   By: jmigoya- <jmigoya-@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/11 21:28:04 by jmigoya-          #+#    #+#             */
-/*   Updated: 2024/03/20 16:34:53 by jmigoya-         ###   ########.fr       */
+/*   Updated: 2024/03/25 16:55:23 by jmigoya-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,5 +60,5 @@ void DiamondTrap::whoAmI()
 
 void DiamondTrap::attack(const std::string &target)
 {
-	FragTrap::attack(target);
+	ScavTrap::attack(target);
 }
